@@ -1,4 +1,4 @@
-package com.ramces.SkyMusic
+package com.ramces.SkyMusic.View.Activities
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -8,6 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.ramces.SkyMusic.R
 import com.ramces.SkyMusic.databinding.ActivityMySpotifyAuthorizationBinding
 
 class MySpotifyAuthorizationActivity : AppCompatActivity() {

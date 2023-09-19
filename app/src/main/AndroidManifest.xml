@@ -13,7 +13,12 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".View.Activities.AlbumDetailActivity"
+            android:exported="false"
+            android:label="@string/title_activity_album_detail"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".View.Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,14 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MySpotifyAuthorizationActivity"
+            android:name=".View.Activities.MySpotifyAuthorizationActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="callback"
                     android:scheme="yourcustomprotocol" />
